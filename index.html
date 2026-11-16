@@ -395,31 +395,23 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
       </div>
       <div class="tix">
         <article class="tick">
-          <h3>Game night</h3>
-          <div class="price">$5<small>per person</small></div>
+          <h3>Buy online</h3>
+          <div class="price">$8<small>per person</small></div>
           <ul>
+            <li>$7 ticket + $1 card fee</li>
             <li>Entry to every game that evening</li>
-            <li>Come and go between games</li>
+            <li>Pay with card, Apple Pay or Google Pay</li>
           </ul>
           <a class="btn primary small" href="#tickets" data-ticket="game">Buy online</a>
         </article>
         <article class="tick">
-          <h3>Student</h3>
-          <div class="price">$3<small>with school ID</small></div>
+          <h3>At the door</h3>
+          <div class="price">$7<small>cash</small></div>
           <ul>
-            <li>Same as game night</li>
-            <li>Any student ID from any school</li>
+            <li>$8 with card ($1 card fee)</li>
+            <li>Entry to every game that evening</li>
+            <li>Come and go between games</li>
           </ul>
-          <a class="btn primary small" href="#tickets" data-ticket="student">Buy online</a>
-        </article>
-        <article class="tick">
-          <h3>Season pass</h3>
-          <div class="price">$25<small>per person</small></div>
-          <ul>
-            <li>Every regular-season game, Nov 3 to Dec 11</li>
-            <li>One pass for the whole season</li>
-          </ul>
-          <a class="btn primary small" href="#tickets" data-ticket="season">Buy online</a>
         </article>
       </div>
       <div class="panel">
@@ -427,14 +419,14 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
           <div>
             <h3>How to buy</h3>
             <ol>
-              <li>Tap <b>Buy online</b> on the ticket you want and pay with Square on your phone or computer.</li>
+              <li>Tap <b>Buy online</b> and pay with Square on your phone or computer.</li>
               <li>Show your Square receipt at the check-in table, or give your name.</li>
               <li>Doors open before the first tip-off of the night.</li>
             </ol>
           </div>
           <div>
             <h3>Paying at the game</h3>
-            <p>Cash and card are both accepted at the door and the concession table. You can also scan the QR code on the sign to pay from your phone.</p>
+            <p>Tickets are $7 cash or $8 by card at the door. Cash and card are both accepted at the concession table. You can also scan the QR code on the sign to buy from your phone.</p>
           </div>
         </div>
       </div>
@@ -666,7 +658,6 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
       <a href="#contact">Contact</a>
       <a class="owner" href="#" data-owner-link>Owner login</a>
     </nav>
-    <p class="fine">Ticket prices are placeholders.</p>
   </div>
 </footer>
 
@@ -678,8 +669,9 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
     ownerUrl: 'https://gms-jv-dashboard.alimousli13.workers.dev',
     // Live schedule from the league's Google Sheet (public view: schedule only).
     scheduleUrl: 'https://script.google.com/macros/s/AKfycbzQBI8Z1PMjFtq6Htt2Fcptq6L7jCUuAXXDz6ohFPof4nssc7Xhkkzl2hFq0DlSR_NHVg/exec?view=public',
-    // Square payment links. Leave '' to show "Online sales coming soon".
-    tickets: { game: '', student: '', season: '' }
+    // Square payment link for the online game ticket ($8 = $7 + $1 card fee).
+    // Leave '' to show "Online sales coming soon".
+    tickets: { game: 'https://square.link/u/McH78mOv' }
   };
   // ======================================================================
 
