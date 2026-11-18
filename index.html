@@ -396,9 +396,9 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
       <div class="tix">
         <article class="tick">
           <h3>Buy online</h3>
-          <div class="price">$8<small>per person</small></div>
+          <div class="price">$7<small>per ticket</small></div>
           <ul>
-            <li>$7 ticket + $1 card fee</li>
+            <li>+ $1 card fee per order, not per ticket (2 tickets = $15)</li>
             <li>Entry to every game that evening</li>
             <li>Pay with card, Apple Pay or Google Pay</li>
           </ul>
@@ -406,9 +406,9 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
         </article>
         <article class="tick">
           <h3>At the door</h3>
-          <div class="price">$7<small>cash</small></div>
+          <div class="price">$7<small>per ticket</small></div>
           <ul>
-            <li>$8 with card ($1 card fee)</li>
+            <li>Cash: $7. Card: + $1 per payment, not per ticket</li>
             <li>Entry to every game that evening</li>
             <li>Come and go between games</li>
           </ul>
@@ -420,13 +420,13 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
             <h3>How to buy</h3>
             <ol>
               <li>Tap <b>Buy online</b> and pay with Square on your phone or computer.</li>
-              <li>Show your Square receipt at the check-in table, or give your name.</li>
+              <li>At the check-in table, show your Square receipt email or give the name you bought under.</li>
               <li>Doors open before the first tip-off of the night.</li>
             </ol>
           </div>
           <div>
             <h3>Paying at the game</h3>
-            <p>Tickets are $7 cash or $8 by card at the door. Cash and card are both accepted at the concession table. You can also scan the QR code on the sign to buy from your phone.</p>
+            <p>Tickets are $7 each. Paying by card adds a $1 fee once per payment, so two tickets on one card is $15. Cash and card are both accepted at the concession table (card orders under $5 have a $1 card fee). You can also scan the QR code on the sign to buy from your phone.</p>
           </div>
         </div>
       </div>
@@ -669,7 +669,7 @@ textarea { resize: vertical; min-height: 9rem; font-size: 0.9rem; line-height: 1
     ownerUrl: 'https://gms-jv-dashboard.alimousli13.workers.dev',
     // Live schedule from the league's Google Sheet (public view: schedule only).
     scheduleUrl: 'https://script.google.com/macros/s/AKfycbzQBI8Z1PMjFtq6Htt2Fcptq6L7jCUuAXXDz6ohFPof4nssc7Xhkkzl2hFq0DlSR_NHVg/exec?view=public',
-    // Square payment link for the online game ticket ($8 = $7 + $1 card fee).
+    // Square payment link for the online game ticket ($7 per ticket + $1 service fee once per order).
     // Leave '' to show "Online sales coming soon".
     tickets: { game: 'https://square.link/u/McH78mOv' }
   };
